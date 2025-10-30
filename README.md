@@ -97,6 +97,6 @@ cp widgets.py ~/.config/Ax-Shell/modules/
 
 ---
 
-**Ready to install?** See INSTALLATION_GUIDE.md for detailed instructions!
+**Ready to install?** See [INSTALLATION_GUIDE.md](https://github.com/echojhawke/Ax-Shell-VPN-Toggle/blob/main/INSTALLATION_GUIDE.md) for detailed instructions!
 
 ## SEE LICENSE.MD
