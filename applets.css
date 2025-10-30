@@ -1,0 +1,176 @@
+#bluetooth-header,
+#network-header,
+#vpn-header {
+  border: 2px solid var(--surface);
+  padding: 4px;
+  border-radius: 12px;
+}
+
+#bluetooth-device,
+#wifi-ap-slot,
+#vpn-connection {
+  border: 2px solid var(--surface);
+  border-radius: 12px;
+  padding: 4px;
+}
+
+#bluetooth-scan,
+#bluetooth-back,
+#network-refresh,
+#network-back,
+#vpn-refresh,
+#vpn-back {
+  background-color: var(--surface);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+#bluetooth-back-label,
+#network-back-label,
+#vpn-back-label {
+  font-size: 20px;
+}
+
+#bluetooth-scan:hover,
+#bluetooth-back:hover,
+#network-refresh:hover,
+#network-back:hover,
+#vpn-refresh:hover,
+#vpn-back:hover {
+  background-color: var(--surface-bright);
+}
+
+#bluetooth-scan label,
+#bluetooth-toggle label,
+#wifi-connect-button label,
+#vpn-connect label {
+  font-weight: bold;
+}
+
+#bluetooth-text,
+#bluetooth-section,
+#vpn-text {
+  font-weight: bold;
+}
+
+#bluetooth-section {
+  background-color: var(--surface);
+  border-radius: 12px;
+  padding: 8px;
+}
+
+#bluetooth-connection,
+#vpn-connection-status {
+  font-size: 20px;
+}
+
+#bluetooth-connect,
+#wifi-connect-button,
+#vpn-connect {
+  font-weight: bold;
+  background-color: var(--surface);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+#wifi-connect-button.connected {
+  background-color: var(--green);
+}
+
+#wifi-connect-button.connected label {
+  color: var(--shadow);
+}
+
+#bluetooth-connect.connected {
+  background-color: var(--blue);
+}
+
+#bluetooth-connect.connected label {
+  color: var(--shadow);
+}
+
+#vpn-connect.connected {
+  background-color: var(--primary);
+}
+
+#vpn-connect.connected label {
+  color: var(--shadow);
+}
+
+#bluetooth-connect:hover,
+#vpn-connect:hover {
+  background-color: var(--surface-bright);
+}
+
+#bluetooth-paired,
+#bluetooth-available {
+  background-color: var(--surface);
+  border-radius: 20px;
+  padding: 4px;
+}
+
+#bt-sep {
+  /*padding: 1px;*/
+  border-radius: 16px;
+  /*background-color: var(--surface);*/
+  /*margin: 0 16px;*/
+}
+
+#bluetooth-scan-label,
+#network-refresh-label,
+#vpn-refresh-label {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+#bluetooth-scan.scanning {
+  animation: blink 0.5s ease infinite;
+}
+
+#bluetooth-scan-label.scanning {
+  animation: blink 0.5s ease infinite;
+}
+
+@keyframes blink {
+  0% {
+    background-color: var(--blue);
+    color: var(--shadow);
+  }
+  50% {
+    background-color: var(--shadow);
+    color: var(--blue);
+  }
+  100% {
+    background-color: var(--blue);
+    color: var(--shadow);
+  }
+}
+
+/* === VPN Popup Specific === */
+#vpn-popup {
+  background-color: var(--shadow);
+  padding: 14px;
+  border-radius: 0 0 34px 34px;
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1);
+}
+
+#notch-content.panel #vpn-popup {
+  border-radius: 34px;
+}
+
+#vpn-connections {
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+.vpn-slot-icon {
+  color: var(--primary);
+  font-size: 20px;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+#vpn-name-label {
+  font-weight: 600;
+  font-size: 14px;
+}
